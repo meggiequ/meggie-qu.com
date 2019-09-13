@@ -1,0 +1,323 @@
+h2 {
+	font-family: 'Brandon Grotesque Light';
+}
+
+p {
+	font-size: 1.18em;
+	/*font-family: 'Source Sans Pro', sans-serif;*/
+}
+
+.left {
+	position: fixed;
+	height: 80vh;
+	width: 20vw;
+	top: 0;
+	display: flex;
+}
+
+.space {
+	margin-left: 2em;
+	color: #ffb8de;
+	font-size: 1.3em;
+}
+.space:hover {
+	color: #ff1493;
+	transition: all 0.3s;
+	cursor: pointer;
+}
+.next {
+	margin-top: 10vh;
+	text-align: center;
+}
+.next a {
+	line-height: 2em;
+}
+
+.hidenav {
+	display: block;
+}
+
+.brief {
+	list-style: none;
+	display: block;
+	margin-top: 15vh;
+	padding-inline-start:0;
+	border-bottom: dashed; 
+	border-width: thin; 
+	padding-bottom: 1em; 
+	margin-right: 5vw;
+}
+
+.brief li {
+	line-height: 2em;
+}
+
+
+.right {
+	margin-left: 25vw;
+	margin-top: 8vh;
+	width: 66.666vw;
+	max-width: 740px;
+}
+.button {
+	background-color: white;
+	border: none;
+	color: black;
+	margin: 2em 1em 0em 1em;
+	cursor: pointer;
+	font-size: 1.3em;
+	width: 2em;
+	height: 1.6em;
+	position: flex;
+	z-index: 1000000;
+}
+
+g:hover circle{
+	fill: #BF0D0C;
+	stroke-width: 10;
+	stroke: #BF0D0C;
+	transition: all 0.3s;
+}
+
+a text {
+	fill: grey;
+}
+
+a:hover text {
+	fill: #BF0D0C;
+	text-decoration: none;
+	font-family: 'Brandon Grotesque Regular';
+	text-decoration: none;
+	transition: all 0.3s;
+}
+
+a:active text {
+	fill: #BF0D0C;
+	text-decoration: none;
+	font-family: 'Brandon Grotesque Regular';
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:active {
+	fill: #BF0D0C;
+}
+
+
+.active circle {
+	fill: #BF0D0C;
+	stroke: #BF0D0C;
+	stroke-width: 10;
+}
+
+.active text {
+	fill:#BF0D0C ;
+	text-decoration: none;
+	font-family: 'Brandon Grotesque Regular';
+}
+p.footnote {
+	font-size: 90%;
+	opacity: 0.6;
+}
+
+p.how {
+	color: white;
+	background-color:#42145F;
+	padding: 2em 5em;
+	margin: 0 2.5em;
+	border-radius: 1em;
+	font-family: 'Brandon Grotesque Regular';
+	text-align: center;
+	font-size: 1.5em;
+
+}
+
+.uncanny {
+	width: 80%;
+
+}
+
+b {
+	font-family: 'Brandon Grotesque Regular';
+}
+
+h3 {
+	font-family: 'Brandon Grotesque Regular';
+	text-align: left;
+	font-size: 1.4em;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 25px;
+	height: 0;
+}
+
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.bar {
+	display: none;
+}
+
+.parallax-window {
+  color: white;
+  padding: 180px 100px;
+  background: transparent;
+}
+
+div.valuation {
+	width: 33%;
+	padding-right: 1em;
+	display: inline-grid;
+}
+
+h3.valuation {
+	color: rgba(0,0,0,.5);
+	font-size: 1.2em;
+}
+
+.two-two {
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+
+.halftween {
+	width: 45%; 
+	display: inline-block;
+	margin-right: 2%;
+
+}
+
+.halftween img {
+	width: 100%;
+}
+
+.personas {
+	display: inline-block;
+	width: 50%;
+	padding-right: 5%;
+}
+
+.left a {
+		transform: translateY(0px);
+		opacity: 1;
+		background-color: #e5e6eb;
+	}
+
+.move-left {
+	transform: translate(-1.3em, 0.6em);
+}
+
+.two-three {
+	width: 65%;
+	margin-left: 15%;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.three-three {
+	width: 85%;
+	margin-left: 15%;
+}
+
+h3.move-left {
+	font-size: 3em;
+	line-height: 0;
+}
+
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+@media (max-width: 799px) {
+	.right {
+		margin: 8vh 4vw 0 4vw ;
+		width: auto;
+		max-width: 800px;
+	}
+
+	.hidenav {
+		display: none;
+	}
+	.bar {
+		display: flex;
+	}
+	.hidenav {
+		display: none;
+	}
+	.left a {
+		transform: translateY(-20px);
+		opacity: .6;
+	}
+	.two-three {
+		width: 85%;
+		margin-left: 15%;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+
+@media (max-width: 499px) {
+	.right {
+		margin: 8vh 4vw 0 4vw ;
+		width: auto;
+		max-width: 800px;
+	}
+	.bar {
+		display: flex;
+	}
+	.hidenav {
+		display: none;
+	}
+	.left a {
+		transform: translateY(-20px);
+		opacity: .6;
+	}
+	p.how {
+		font-size: 1em;
+		padding: 1.5em 1em;
+		margin: 0 1.5em;
+	}
+	div.valuation {
+		width: 100%;
+		padding-right: 1em;
+		display: inline-grid;
+	}
+	.personas {
+		display: inline-block;
+		width: 100%;
+		padding-right: 5%;
+	}
+	.two-two {
+		justify-content: center;
+		align-items: center;
+		display: block;
+	}
+	.halftween {
+		width: 95%; 
+		display: inline-block;
+		margin-right: 2%;
+		margin-top: 1em;
+
+	}
+}
