@@ -14,11 +14,21 @@
 
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/google.css">
+  <script>
+    function disableClick(){
+        document.onclick=function(event){
+          if (event.button == 2) {
+            alert('Right Click Message');
+            return false;
+          }
+        }
+      }
+  </script>
 
   
 </head>
 
-<body>
+<body onload="disableClick()">
 
 <div class="container">
   <div class="row">
