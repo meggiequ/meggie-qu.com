@@ -12,7 +12,7 @@
 
   function pasuser(form) { 
 
-    var loginPassword = "password"; 
+    var loginPassword = "meggie-qu-google"; 
 
       if (form.pass.value== loginPassword ) { 
         $('.hiddenStuff').toggleClass( "hidden", 1000, "easeInSine" );
