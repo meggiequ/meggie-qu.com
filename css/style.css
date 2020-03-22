@@ -172,6 +172,10 @@ h2.logo {
 }
 
 .pink {
+	color: #C51162;
+}
+
+.pink:hover {
 	color: #ff1493;
 }
 
@@ -179,11 +183,23 @@ h2.logo {
 	color: #42145F;
 }
 
+.purple:hover {
+	color: #8E24AA;
+}
+
 .yellow {
 	color: #FBBA20;
 }
 
+.yellow:hover {
+	color: #FFEB3B;
+}
+
 .blue {
+	color: #01579B;
+}
+
+.blue:hover {
 	color: #4F86F5;
 }
 
@@ -191,8 +207,17 @@ h2.logo {
 	color: #B71C1C;
 }
 
+.red:hover {
+	color: #E53935;
+}
+
 .green {
 	color: #2F5346;
+}
+
+.green:hover {
+	color: #328800;
+	transition: 0.5;
 }
 
 .row {
