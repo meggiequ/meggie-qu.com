@@ -132,9 +132,9 @@ h2.logo {
 
 .intro {
 	text-align: center;
-	    margin: 0 auto;
+	    margin: 0 16px;
 	    margin-bottom: 80px;
-	    width: 300px;
+	    /* width: 300px; */
 	    background: -webkit-linear-gradient(336deg, #800080, #ff1493);
 	    -webkit-background-clip: text;
 	    /*background: #333;
