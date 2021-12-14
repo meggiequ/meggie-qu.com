@@ -52,7 +52,7 @@ h2 {
 h3 {
 	margin-bottom: 10px;
 	font-family: Brandon Grotesque Bold;
-	color: #FF1493;
+	color: #838383;
 	letter-spacing: normal;
 }
 
@@ -68,7 +68,7 @@ h5 {
 
 a {
 	background: none;
-	color: #ff1493;
+	color: #838383;
 }
 
 
@@ -190,13 +190,13 @@ h3.valuation {
 
 	header a {
 		padding: 15px 0;
-		color: #FF1493;
+		color: #838383;
 	}
 
 	h3 {
 		font-size: 40px;
 		margin: 30px 0 20px 0;
-		color: #FF1493;
+		color: #838383;
 	}
 
 	h4 {
@@ -298,11 +298,11 @@ h3.valuation {
 	  color: #666;
 	}
 	/*.vertical-nav .inprogress:hover .dot {
-	  background: #ff1493;
+	  background: #838383;
 	}*/
 	.vertical-nav .inprogress:hover .label {
 	  font-size: 16px;
-	  color: #ff1493;
+	  color: #838383;
 	  transition: all .1s linear;
 	}
 	.vertical-nav .inactive .dot {
@@ -327,14 +327,14 @@ h3.valuation {
 	}
 
 	.vertical-nav .active .dot {
-	  background: #ff1493;
+	  background: #838383;
 	  
 	}
 
 	.vertical-nav .active .label {
 	  font-size: 14px;
 	  transition: all .1s linear;
-	  color: #ff1493;
+	  color: #838383;
 	}
 
 	.single-tween, .stagger-tween {
