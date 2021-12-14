@@ -61,7 +61,7 @@ h3 {
 }
 
 h3.about {
-	background: -webkit-linear-gradient(336deg, #800080, #ff1493);
+	background: -webkit-linear-gradient(336deg, #800080, #065535);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	width: 300px;
@@ -105,6 +105,13 @@ header {
 }
 
 
+header h3 {
+	color: #065535;
+	font-size: 31px;
+}
+
+
+
 nav.index-nav {
 	text-decoration: none;
 	margin-bottom: 40px;
@@ -132,7 +139,7 @@ nav.index-nav ul li a {
 }
 
 nav.index-nav ul li a:hover {
-	color: #ff1493;
+	color: #065535;
 	text-decoration: none;
 }
 
@@ -141,7 +148,7 @@ nav.index-nav ul li a:active {
 }
 
 h2.logo {
-	background: -webkit-linear-gradient(336deg, #800080, #ff1493);
+	background: -webkit-linear-gradient(336deg, #065535, #065535);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -190,7 +197,7 @@ h2.logo {
 .pro-list {
 	display: flex;
 	width: 100%;
-	color: #ff1493;
+	color: #065535;
 }
 
 .title-numb {
@@ -210,11 +217,11 @@ h2.logo {
 }
 
 .pink {
-	color: #C51162;
+	color: #065535;
 }
 
 .pink:hover {
-	color: #ff1493;
+	color: #0b9c62;
 }
 
 .purple {
@@ -250,7 +257,7 @@ h2.logo {
 }
 
 .green {
-	color: #2F5346;
+	color: #2E6F00;
 }
 
 .green:hover {
@@ -279,7 +286,7 @@ h2.logo {
 
 .aboutme h4{
 		text-align: left;
-		color: #FF1493;
+		color: #065535;
 	}
 
 #about img {
@@ -296,9 +303,9 @@ h2.logo {
 }
 
 .btn-light {
-	color: #ff1493;
-    background-color: #fef8fb;
-    border-color: #ff1493;
+	color: #065535;
+    background-color: #e6eeea;
+    border-color: #065535;
     width: 10em;
     height: 3em;
     margin-bottom: 30px;
@@ -340,7 +347,7 @@ h2.logo {
 footer {
 	padding: 30px;
 	color: #333333;
-	border-top: solid 0.1em #ff1493;
+	border-top: solid 0.1em #065535;
 }
 
 footer .socialmedia-container a img {
@@ -389,6 +396,8 @@ footer .socialmedia-container a img {
 		max-width: 510px;
 	}
 
+
+
 	.index-nav ul {
 		width: 510px;
 	}
@@ -425,9 +434,9 @@ footer .socialmedia-container a img {
 		margin-bottom: 50px;
 	}
 	.btn-light {
-		color: #ff1493;
-	    background-color: #fef8fb;
-	    border-color: #ff1493;
+		color: #065535;
+	    background-color: #e6eeea;
+	    border-color: #065535;
 	    width: 15em;
 	    height: 3em;
 	    margin-bottom: 50px;
@@ -469,7 +478,7 @@ footer .socialmedia-container a img {
 	}
 
 	header {
-		margin-top: 80px;
+		margin-top: 60px;
 	}
 
 	nav.index-nav {
@@ -518,6 +527,11 @@ footer .socialmedia-container a img {
 	h4 {
 		font-size: 30px;
 	}
+
+	header h3 {
+		padding-top: 100px;
+		font-size: 48px;
+	}
 	
 	
 	img.logo {
@@ -536,7 +550,7 @@ footer .socialmedia-container a img {
 		width: 250px;
 	}
 	h2.logo {
-		background: -webkit-linear-gradient(336deg, #800080, #ff1493);
+		background: -webkit-linear-gradient(336deg, #800080, #065535);
 	    -webkit-background-clip: text;
 	    -webkit-text-fill-color: transparent;
 	    font-size: 36px;
@@ -620,7 +634,7 @@ footer .socialmedia-container a img {
 		width: 250px;
 	}
 	h2.logo {
-		background: -webkit-linear-gradient(336deg, #800080, #ff1493);
+		background: -webkit-linear-gradient(336deg, #800080, #065535);
 	    -webkit-background-clip: text;
 	    -webkit-text-fill-color: transparent;
 	    font-size: 36px;
@@ -674,7 +688,7 @@ footer .socialmedia-container a img {
 
 	.aboutme h4{
 		text-align: left;
-		color: #FF1493;
+		color: #065535;
 	}
 
 	#about h3 {
