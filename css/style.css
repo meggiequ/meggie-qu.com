@@ -106,7 +106,7 @@ header {
 
 
 header h3 {
-	color: #065535;
+	color: #38362D;
 	font-size: 31px;
 }
 
@@ -162,7 +162,7 @@ h2.logo {
     	-moz-animation: Intro 10s ease infinite;
     	animation: Intro 10s ease infinite;
 	    -webkit-background-clip: text;
-	    -webkit-text-fill-color: #545454;
+	    -webkit-text-fill-color: #38362D;
 	    font-family: Brandon Grotesque Regular;
 }
 
@@ -194,10 +194,11 @@ h2.logo {
 	padding-bottom: 25px;
 }
 
+
 .pro-list {
 	display: flex;
 	width: 100%;
-	color: #065535;
+	color: #38362D;
 }
 
 .title-numb {
@@ -210,7 +211,9 @@ h2.logo {
 	width: 100%;
 	text-align: right;
 	position: absolute;
+	color: #38362D;
 }
+
 
 .dark {
 	color: #333333;
@@ -263,6 +266,10 @@ h2.logo {
 .green:hover {
 	color: #328800;
 	transition: 0.5;
+}
+
+.brown {
+	color: #38362D;
 }
 
 .row {
@@ -388,7 +395,7 @@ footer .socialmedia-container a img {
 	}
 
 	nav.index-nav ul li a {
-		color: #9B9B9B;
+		color: #666666;
 		font-size: 20px;
 	}
 	nav.index-nav {
