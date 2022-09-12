@@ -496,6 +496,7 @@ footer .socialmedia-container a img {
 		width: 690px;
 	}
 
+
 	.pro-list {
 		display: flex;
 		width: 100%;
@@ -514,6 +515,14 @@ footer .socialmedia-container a img {
 		text-align: right;
 		position: inherit;
 	}
+	.title-left {
+		padding-left: 0;
+	}
+
+	.title-right {
+		padding-right: 0;
+	}
+
 	#portfolio {
 		/*margin-bottom: 100px;*/
 	}
