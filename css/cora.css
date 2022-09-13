@@ -17,13 +17,14 @@ p {
 
 .space {
 	margin-left: 2em;
-	color: #ffb8de;
+	color: #032517;
 	font-size: 1.3em;
 }
 .space:hover {
-	color: #ff1493;
+	color: #098553;
 	transition: all 0.3s;
 	cursor: pointer;
+	text-decoration: underline;
 }
 .next {
 	margin-top: 10vh;

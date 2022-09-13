@@ -190,7 +190,7 @@ h3.valuation {
 
 	header a {
 		padding: 15px 0;
-		color: #838383;
+		color: #065535;
 	}
 
 	h3 {
@@ -262,8 +262,8 @@ h3.valuation {
 	  align-items: center;
 	  justify-content: left;
 	  height: 90vh;
-	  width: 300px;
-	  padding-left: 15px;
+	  width: 350px;
+	  padding-left: 30px;
 	  background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
 
 	}
@@ -278,13 +278,14 @@ h3.valuation {
 	  width: 16px;
 	  border-radius: 100%;
 	  display: inline-block;
-	  background: #ccc;
+	  background: #333;
 	  vertical-align: middle;
 	  margin-right: 8px;
 	}
 	.vertical-nav a {
-	  color: #000;
+	  color: #333;
 	  text-decoration: none;
+	  font-weight: 800;
 	  background: none;
 	}
 	
@@ -295,18 +296,18 @@ h3.valuation {
 	
 	.vertical-nav .inprogress .label {
 	  font-size: 14px;
-	  color: #666;
+	  color: #333;
 	}
-	/*.vertical-nav .inprogress:hover .dot {
-	  background: #838383;
-	}*/
+	.vertical-nav .inprogress:hover .dot {
+	  background: #111;
+	}
 	.vertical-nav .inprogress:hover .label {
 	  font-size: 16px;
-	  color: #838383;
+	  color: #111;
 	  transition: all .1s linear;
 	}
 	.vertical-nav .inactive .dot {
-	  background: #f2f2f2;
+	  background: #065535;
 	}
 	.vertical-nav .inactive .label {
 	  display: none;
