@@ -141,6 +141,7 @@ nav.index-nav ul li a {
 nav.index-nav ul li a:hover {
 	color: #065535;
 	text-decoration: none;
+	font-weight: 600;
 }
 
 nav.index-nav ul li a:active {
