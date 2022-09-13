@@ -72,6 +72,8 @@ a {
 }
 
 
+
+
 .vertical-nav {
 	display: none;
 }
@@ -84,6 +86,8 @@ header {
     width: 100vw;
     background-color: rgba(255,255,255,0.9);
     z-index: 1000;
+    top: 0;
+    box-shadow: 0px 2px 13px rgb(0 0 0 / 10%);
 }
 
 .how {
@@ -122,6 +126,41 @@ h3.valuation {
 	width: 100%;
 }
 
+	.sample-header {
+	  position: fixed;
+	  left: 0;
+	  top: 0;
+	  width: 100%;
+	  background-image: url("../img/cora-banner.png");
+	  background-position: center;
+	  background-size: cover;
+	  background-repeat: no-repeat;
+	}
+	.sample-header::before {
+	  content: "";
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  opacity: 0.3;
+	}
+	.sample-header-section {
+	  position: relative;
+	  padding: 15% 0 10%;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+	.sample-section-wrap {
+	  position: relative;
+	  background-color: white;
+	}
+	.sample-section {
+	  position: relative;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+
 
 
 
@@ -135,9 +174,8 @@ h3.valuation {
 		display: none;
 	}
 	
+	
 }
-
-@media (min-width: 768px) {
 
 	
 }
@@ -261,7 +299,8 @@ h3.valuation {
 	  flex-direction: row;
 	  align-items: center;
 	  justify-content: left;
-	  height: 90vh;
+	  height: auto;
+	  margin-top: 60px;
 	  width: 350px;
 	  padding-left: 30px;
 	  background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
