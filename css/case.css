@@ -27,8 +27,15 @@ src: local('Brandon Grotesque Black'), url('../fonts/brandon-grotesque-black-58a
 }
 
 body {
-	color: #4A4A4A;
+	color: #111111;
 	line-height: 1.5;
+	font-family: 'Open Sans', sans-serif;
+}
+
+b{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color: 111111;
 }
 p {
 	font-family: 'Open Sans', sans-serif;
@@ -69,6 +76,11 @@ h5 {
 a {
 	background: none;
 	color: #838383;
+}
+
+.footnote {
+	text-align: center;
+	padding-top: 0.5rem;
 }
 
 
@@ -131,7 +143,7 @@ h3.valuation {
 	  left: 0;
 	  top: 0;
 	  width: 100%;
-	  
+
 	  background-image: url("../img/cora-banner.png");
 	  background-position: center;
 	  background-size: cover;
