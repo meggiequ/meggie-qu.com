@@ -41,8 +41,12 @@ p {
 	font-family: 'Open Sans', sans-serif;
 }
 div.copy {
-	padding: 0 30px;
+	padding: 2rem 30px;
 	margin-bottom: 50px;
+}
+
+p{
+	margin-bottom: 1rem;
 }
 
 h1 {
