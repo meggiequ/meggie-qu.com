@@ -369,6 +369,10 @@ footer .socialmedia-container a img {
 
 .showdown{
 	display: flex;
+	flex-direction: column;
+}
+.showdown2{
+	display: inline;
 }
 
 .showup{
@@ -531,6 +535,10 @@ footer .socialmedia-container a img {
 	.showdown{
 		display: none;
 	}
+	.showdown2{
+		display: none;
+	}
+
 	.showup{
 		display: flex;
 	}
