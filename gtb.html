@@ -145,10 +145,33 @@
 							Census Hints Acceptance Rate <b style="color:green">(Δ = +11.81%)</b>
 						</li>
 					</ul>
+					<br>
+
+					<p class="stagger-tween-item">
+						Intro modal test showed statistically significant results on:
+					</p> 
+					<ul class="stagger-tween-item">
+						<li>
+							Completion rate <b style="color:green">(Δ = +6.23%)</b>
+						</li>
+						<li>
+							Start rate <b style="color:green">(Δ = +3.53%)</b>
+						</li>
+						<li>
+							Node creation rate <b style="color:green">(Δ = +6.94%)</b>
+						</li>
+						<li>
+							Hints generation rate <b style="color:green">(Δ = +5.15%)</b>
+						</li>
+					</ul>
+					<br>
 
 					<p class="stagger-tween-item">
 						We rolled out the design after testing positive and were able to iterate more tests on top of this new flow because of the flexibility and modular structure.					
 					</p>
+
+					
+
 				</div>
 			</div>
 	
@@ -194,7 +217,7 @@
 				<div class="copy stagger-tween-item">
 					<h3>DESIGN</h3>
 					<p>
-						The redesign was an end-to-end flow composed of 4 different components tested separately: order confirmation, intro modal, questionnaire tree builder, and value prop. The questionnaire tree builder is the main flow with questions about family members' information. The value prop is eye candy and motivations that are inserted in between questions to encourage users to complete the tree building. 
+						The redesign was an end-to-end flow composed of 4 different components A/B-tested separately: order confirmation, intro modal, questionnaire tree builder, and value prop. The questionnaire tree builder is the main flow with questions about family members' information. The value prop is eye candy and motivations that are inserted in between questions to encourage users to complete the tree building. 
 					</p>
 				</div>
 				<div class="stagger-tween-item">
@@ -204,7 +227,10 @@
 				<div class="copy stagger-tween-item">
 					<h4>01 Order confirmation</h4>
 					<p>
-						Only 25% of customers clicked start tree CTA on the order confirmation page. Even though they could access GTB on homepage, we were losing the best entry point to start a tree. By getting rid of the order confirmation page and only showing a modal with a countdown for the confirmation, we can get users to start product experience without efforts.
+						Only 25% of customers clicked start tree CTA on the order confirmation page. Even though they could access GTB on homepage, we were losing the best entry point to start a tree. By getting rid of the order confirmation page and only showing a modal with a countdown for the confirmation, we can get users to start product experience without efforts. 
+					</p>
+					<p>
+						Confirmation page test showed statistically significant results on Guided Tree Builder visit <b style="color:green">(Δ = +40%)</b> and Node Creation Rate <b style="color:green">(Δ = +6%)</b>
 					</p>
 					<img class="stagger-tween-item" src="img/gtb-order-mobile.gif">
 					<p class="footnote stagger-tween-item" >Pic. 5 Order confirmation page before vs after</p>
@@ -213,27 +239,22 @@
 					<p class="stagger-tween-item">
 						Only 37% of customers watched the intro video on the importance of starting a family tree. Those who watched had a higher bill-through rate after the trial period. Creating animations in a carousel allows us to provide critical information without watching a one-minute video. 
 					</p>
+					<p class="stagger-tween-item">
+						Intro modal test showed statistically significant results on completion rate <b style="color:green">(Δ = +6.23%)</b>, start rate <b style="color:green">(Δ = +3.53%)</b>, node creation rate <b style="color:green">(Δ = +6.94%)</b>, and hints generation rate <b style="color:green">(Δ = +5.15%)</b>
+					</p>
 				</div>
 				<div class="stagger-tween-item">
-					<div class="single-tween-item showfull">
+					<div class="single-tween-item showup">
 						<img class="graph" src="img/gtb-intro.png">
+						<p class="footnote stagger-tween-item" >Pic. 6 Educational video vs intro modal with animations</p>
 					</div>
-					<div class="single-tween-item showphone horizontal-scroll-wrapper">
-						<div>
-							<img src="img/gtb-intro01.png">
-						</div>
-						<div>
-							<img src="img/gtb-intro02.png">
-						</div>
-						<div>
-							<img src="img/gtb-intro03.png">
-						</div>
-						<div>
-							<img src="img/gtb-intro04.png">
-						</div>						
+					<div class="single-tween-item showdown" style="display: inline;">
+						<img style="margin-bottom:0; padding:0 1rem 1rem 1rem;" src="img/gtb-intro01.png">
+						<p class="footnote stagger-tween-item" style="margin-top: 0; padding-top: 0; padding-bottom: 1rem;">Pic. 6.1 Previous eucational video</p>
+						<img style="padding-bottom:0; margin:0 2rem 1rem 2rem; width: calc(100vw - 4rem); box-shadow: 0px 2px 9px 0px #0000002E;" src="img/gtb-intro02.gif">
+						<p class="footnote stagger-tween-item" style="margin-top: 0; padding-top: 0;">Pic. 6.2 Intro modal with animations</p>
 					</div>
-<!-- 					<img class="graph" src="img/gtb-intro.png"> -->
-					<p class="footnote stagger-tween-item" >Pic. 6 Educational video vs intro modal with animations</p>
+					
 				</div>
 				<div class="copy">
 					<h4 class="stagger-tween-item">Building Family Trees</h4>
