@@ -15,7 +15,7 @@
     var loginPassword = "meggie"; 
 
       if (form.pass.value== loginPassword ) { 
-        $('.hiddenStuff').toggleClass( "hidden", 1000, "easeInSine" );
+        $('.tranStuff').toggleClass( "transparent", 1000, "easeInSine" );
         $('div.tile').addClass('hidden');
         $('body').css( "background", "#fbfbfb" );
       } 

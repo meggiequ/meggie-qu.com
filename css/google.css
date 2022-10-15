@@ -22,6 +22,9 @@
 	  background-attachment:fixed;
 	  font-family: 'Barlow', sans-serif;
 	}
+	.transparent {
+		opacity: 0;
+	}
 	.input-group-addon
 	{
 	  cursor:pointer;

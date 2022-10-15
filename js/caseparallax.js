@@ -4,6 +4,7 @@ function parallax_height() {
   var header_height = $(".sample-header-section").outerHeight();
   $(".sample-section").css({ "margin-top": header_height });
   $(".sample-header").css({ height: header_height - scroll_top });
+  console.log(header_height,scroll_top)
 }
 parallax_height();
 $(window).scroll(function() {
