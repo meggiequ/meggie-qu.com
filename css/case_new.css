@@ -99,6 +99,8 @@ a {
 }
 
 
+
+
 header {
 	display: table;
 	position: fixed;
@@ -191,6 +193,10 @@ div.copy {
 		margin: 16px auto;
 		padding-bottom: 0;
 	}
+
+img.stagger-tween-item {
+	margin-top: 0;
+}
 
 
 
@@ -419,7 +425,7 @@ div.copy {
 	}
 
 	.single-tween, .stagger-tween {
-		margin: 32px 0;
+		margin-top: 0;
 		padding: 32px 0;
 	}
 
@@ -451,6 +457,10 @@ div.copy {
 	h4 {
 		font-size: 30px;
 		margin: 40px 0 40px 0;
+	}
+
+	img.stagger-tween-item {
+		margin-top: 0;
 	}
 
 
