@@ -32,6 +32,13 @@
 	  border-radius:0px;
 	  
 	}
+	input[type=submit]{
+		color: #ffffff;
+	}
+	.input-group input {
+		font-family: 'Brandon Grotesque Regular';
+	}
+
 	.form-control
 	{
 	  height:40px;
@@ -109,12 +116,12 @@
 	}
 	.fa-lock
 	{
-	  color:#ff1493;
+	  color:#276B00;
 	  width:50px;
 	  height:50px;
 	  line-height:50px;
 	  border-radius:50%;
-	  background-color:#FFDFF0;
+	  background-color:#E4EFE7;
 	  text-align:center;
 	  font-size:20px;
 	  margin-bottom:30px;
@@ -148,10 +155,10 @@
 	  border:none;
 	  line-height:40px;
 	  margin:25px 0px 0px;
-	  background: #262FB5; /* Old browsers */
-	background: -moz-linear-gradient(-45deg, #ff1493 0%,#C51162 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(-45deg, #ff1493 0%,#C51162 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(135deg, #ff1493 0%,#C51162 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	  background: #205503; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #205503 0%,#276B00 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #205503 0%,#276B00 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #205503 0%,#276B00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff1493', endColorstr='#C51162',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	}
 	.success
@@ -168,8 +175,6 @@
 	  text-align:center;
 	  transition:ease-out .5s;
 	  background: #d6206e; /* Old browsers */
-	background: -moz-linear-gradient(-45deg, #d6206e 0%,#d62d20 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(-45deg, #d6206e 0%,#d62d20 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(135deg, #d6206e 0%,#d62d20 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#42e695', endColorstr='#3bb2b8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	overflow: hidden;
