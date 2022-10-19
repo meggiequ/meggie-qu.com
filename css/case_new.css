@@ -72,6 +72,7 @@ h3 {
 h4 {
 	font-family: Brandon Grotesque Regular;
 	letter-spacing: normal;
+	font-size: 20px;
 }
 
 h5 {
@@ -84,13 +85,18 @@ a {
 	color: #838383;
 }
 
-.footnote {
+p.footnote {
 	text-align: center;
-	padding-top: 0.5rem;
+	padding-top: 0;
+	margin: 0 0 1.5rem 0;
 }
 
 .graph {
 	width: 100%;
+}
+
+.graph2 {
+	padding: 0 10%;
 }
 
 
@@ -228,6 +234,9 @@ img.stagger-tween-item {
 	.graph {
 		padding: 0 10vw;
 	}
+	.graph2 {
+		padding: 0 20vw;
+	}
 }
 
 
@@ -297,6 +306,10 @@ img.stagger-tween-item {
 
 	.graph {
 		padding: 0 20vw;
+	}
+
+	.graph2 {
+		padding: 0 30vw;
 	}
 
 
@@ -455,7 +468,7 @@ img.stagger-tween-item {
 	}
 	
 	h4 {
-		font-size: 30px;
+		font-size: 24px;
 		margin: 40px 0 40px 0;
 	}
 

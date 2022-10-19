@@ -38,6 +38,11 @@
 	input[type=submit]{
 		color: #ffffff;
 	}
+
+	input[type=submit]:hover{
+		color: #ffffff;
+	}
+
 	.input-group input {
 		font-family: 'Brandon Grotesque Regular';
 	}
@@ -107,16 +112,7 @@
 	  background-color:rgba(255,255,255,0.5);
 	  z-index:-1;
 	}
-	h3
-	{
-	  margin:0px 0px 30px;
-	  line-height:35px;
-	  font-size:20px;
-	}
-	h3 small
-	{
-	  display:block;
-	}
+	
 	.fa-lock
 	{
 	  color:#276B00;
@@ -163,6 +159,10 @@
 	background: -webkit-linear-gradient(-45deg, #205503 0%,#276B00 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(135deg, #205503 0%,#276B00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff1493', endColorstr='#C51162',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	}
+	.btn-primary:hover
+	{
+	  background: #328800; 
 	}
 	.success
 	{

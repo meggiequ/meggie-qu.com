@@ -11,16 +11,17 @@
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/skeleton-framework/1.1.1/skeleton.min.css'>
+<!--   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/skeleton-framework/1.1.1/skeleton.min.css'> -->
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/cora.css">
+  <link rel="stylesheet" href="css/google.css">
   <link rel="stylesheet" type="text/css" href="css/case_new.css">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132445485-1"></script>
   <link rel="stylesheet" href="css/grid.css">
-  <link rel="stylesheet" href="css/google.css">
+  
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132445485-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -30,25 +31,18 @@
     gtag('config', 'UA-132445485-1');
   </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <style type="text/css">
-    p.footnote {
-      font-size: 1.1em;
-    }
-    h3.valuation {
-      font-size: 1.6em;
-    }
-    h2 {
-      font-size: 2.5em;
-    }
-    a text {
-      font-size: 1em;
-    }
-  </style>
 
   
 </head>
 
 <body>
+
+<header>
+    <!-- <img class="logo" src="img/logo.svg" alt=""> -->
+    <a class="float-left" style="background: none;" href="index.html">< Home</a>
+    <a class="float-right" style="background: none;" href="familysub.html">Next: Family Subscription ></a>
+<!--    <h2 class="logo">MEGGIE QU</h2> -->
+  </header>
 
 <div class="container-pass">
   <div class="row">
@@ -56,7 +50,7 @@
       <div class="tile">
         <span class="close"><a href="index.html"><i class="fa fa-times"></i></a></span>
         <i class="fa fa-lock"></i>
-        <h4>This content is password protected.</h4>
+        <h3>This content is password protected.</h3>
           <p>
             Please enter your password
           </p>
@@ -79,12 +73,7 @@
 </div><!-- container -->
 
 <div class="transparent tranStuff">
-  <header>
-    <!-- <img class="logo" src="img/logo.svg" alt=""> -->
-    <a class="float-left" style="background: none;" href="index.html">< Home</a>
-    <a class="float-right" style="background: none;" href="familysub.html">Next: Family Subscription ></a>
-<!--    <h2 class="logo">MEGGIE QU</h2> -->
-  </header>
+  
 
   <div class="hero-wide sample-header" style="background-color: white;background-image: url(./img/gtb-banner.png); height: 400px;">
     <div class="sample-header-section justify-content-center">
@@ -426,8 +415,8 @@
   </div>
     <div class="next stagger-tween-item">
       <a class="space" style="color: #098553; href="gtb.html">Guided Tree Builder</a>
-      <a class="space" href="caltrain.html">Family Subscription</a>
-      <a class="space" href="caltrain.html">Genetic Risks Results</a>
+      <a class="space" href="familysub.html">Family Subscription</a>
+      <a class="space" href="familysub.html">Genetic Risks Results</a>
       <a class="space"  href="cora.html">Cora-AI Chatbot</a>
       <a class="space" href="yellowlamp.html">Yellow Lamp-VUI Research</a>
       <br>
@@ -487,6 +476,9 @@
   <script language="javascript">
 document.addEventListener('contextmenu', function(e) {
   e.preventDefault();
+});
+$(document).ready(function(){
+    $(this).scrollTop(0);
 });
 </script>
 
