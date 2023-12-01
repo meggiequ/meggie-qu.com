@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
 font-family: 'Brandon Grotesque Light';
 font-style: normal;
 font-weight: normal;
@@ -32,7 +32,7 @@ src: local('Brandon Grotesque Black'), url('../fonts/brandon-grotesque-black-58a
 	font-weight: normal;
 	src: local('Avenir Roman'), url('../fonts/Avenir-Roman.woff') format('woff');
 	}
-
+*/
 html {
   scroll-behavior: smooth;
 }
