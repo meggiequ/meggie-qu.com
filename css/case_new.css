@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
 font-family: 'Brandon Grotesque Light';
 font-style: normal;
 font-weight: normal;
@@ -24,7 +24,7 @@ font-family: 'Brandon Grotesque Black';
 font-style: normal;
 font-weight: normal;
 src: local('Brandon Grotesque Black'), url('../fonts/brandon-grotesque-black-58a8a3e824392.woff') format('woff');
-}
+}*/
 
 body {
 	color: #111111;
