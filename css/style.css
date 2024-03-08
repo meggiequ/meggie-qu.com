@@ -2,26 +2,37 @@ html {
   scroll-behavior: smooth;
 }
 
+@font-face {
+ font-family: 'relaway';
+ font-weight: 400;
+ src: url(Raleway-VariableFont_wght.ttf) format('ttf');
+}
+
+
+
 body {
 	padding: 0 auto;
-	font-family: Brandon Grotesque Regular;
+	font-family: raleway;
 	font-size: 14px;
 }
 
 
 h1 {
-	font-size: 58px;
-	font-family: Brandon Grotesque Bold;
+	font-size: 48px;
+	font-weight: 600;
+	font-family: raleway;
 }
 
 h2 {
 	font-size: 26px;
-	font-family: Brandon Grotesque Regular;
+	font-weight: 600;
+	font-family: raleway;
 }
 
 h3 {
 	font-size: 21px;
-	font-family: Brandon Grotesque Bold;
+	font-weight: 600;
+	font-family: raleway;
 	margin-bottom: 3px;
 }
 
@@ -35,9 +46,14 @@ h3.about {
 
 h4 {
 	font-size: 20px;
-	font-family: Brandon Grotesque Regular;
+	font-weight: 300;
+	font-family: raleway;
 }
 
+h5 {
+	font-family: raleway;
+	font-weight: 300;
+}
 img {
 	width: 100%;
 }
@@ -66,7 +82,7 @@ img.logo {
 header {
 	text-align: center;
 	padding: 80px 0 20px 0;
-	font-family: Brandon Grotesque Regular;
+	font-family: raleway;
 }
 
 
@@ -129,7 +145,7 @@ h2.logo {
     	animation: Intro 10s ease infinite;
 	    -webkit-background-clip: text;
 	    -webkit-text-fill-color: #38362D;
-	    font-family: Brandon Grotesque Regular;
+/*	    font-family: Brandon Grotesque Regular;*/
 }
 
 
@@ -279,7 +295,7 @@ h2.logo {
 	color: #065535;
     background-color: #e6eeea;
     border-color: #065535;
-    width: 10em;
+    width: 12em;
     height: 3em;
     margin-bottom: 30px;
 }
@@ -415,7 +431,7 @@ footer .socialmedia-container a img {
 		color: #065535;
 	    background-color: #e6eeea;
 	    border-color: #065535;
-	    width: 15em;
+	    width: 16em;
 	    height: 3em;
 	    margin-bottom: 50px;
 	}
@@ -436,23 +452,23 @@ footer .socialmedia-container a img {
 @media (min-width: 768px) {
 	h1 {
 		font-size: 100px;
-		font-family: Brandon Grotesque Bold;
+/*		font-family: Brandon Grotesque Bold;*/
 	}
 
 	h2 {
 		font-size: 50px;
-		font-family: Brandon Grotesque Regular;
+/*		font-family: Brandon Grotesque Regular;*/
 	}
 
 	h3 {
 		font-size: 30px;
-		font-family: Brandon Grotesque Bold;
+/*		font-family: Brandon Grotesque Bold;*/
 		margin-bottom: 3px;
 	}
 
 	h4 {
 		font-size: 24px;
-		font-family: Brandon Grotesque Regular;
+/*		font-family: Brandon Grotesque Regular;*/
 	}
 
 	/*header {
@@ -554,7 +570,7 @@ footer .socialmedia-container a img {
 	header {
 		text-align: left;
 		padding: 0;
-		font-family: Brandon Grotesque Regular;
+/*		font-family: Brandon Grotesque Regular;*/
 		display: flex;
 		margin-top: 0px;
 	}
@@ -588,23 +604,23 @@ footer .socialmedia-container a img {
 	}
 	h1 {
 		font-size: 150px;
-		font-family: Brandon Grotesque Bold;
+/*		font-family: Brandon Grotesque Bold;*/
 	}
 
 	h2 {
 		font-size: 70px;
-		font-family: Brandon Grotesque Regular;
+/*		font-family: Brandon Grotesque Regular;*/
 	}
 
 	h3 {
 		font-size: 50px;
-		font-family: Brandon Grotesque Bold;
+/*		font-family: Brandon Grotesque Bold;*/
 		margin-bottom: 3px;
 	}
 
 	h4 {
 		font-size: 40px;
-		font-family: Brandon Grotesque Regular;
+/*		font-family: Brandon Grotesque Regular;*/
 		margin-bottom: 2em;
 	}
 
@@ -638,7 +654,7 @@ footer .socialmedia-container a img {
 	header {
 		text-align: left;
 		padding: 0;
-		font-family: Brandon Grotesque Regular;
+/*		font-family: Brandon Grotesque Regular;*/
 		display: flex;
 	}
 
