@@ -195,6 +195,19 @@ p {
   height: auto;
   align-self: auto;
 }
+.socials {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.socials a img {
+  width: 52px;
+  height: 52px;
+  aspect-ratio: 1/1;
+}
+div.contact h4 {
+  margin-bottom: 20px;
+}
 
 @media (min-width: 576px) {
   body {
@@ -220,6 +233,15 @@ p {
   .desktop {
     display: block;
     height: auto;
+  }
+
+  img.case-img {
+    transition: transform 0.4s ease;
+  }
+
+  img.case-img:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.18);
   }
 
   @keyframes colorFade {
@@ -275,7 +297,6 @@ p {
     flex-direction: row;
     padding: 40px;
     align-items: flex-start;
-    gap: 0; /* or handle spacing manually */
     align-self: stretch;
   }
   .case-des {
@@ -306,4 +327,5 @@ p {
       body {
         margin: 40px auto;
       }
+
     }
