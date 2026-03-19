@@ -82,12 +82,9 @@ function overlaps(ax, ay, ar, bx, by, br, pad) {
         balloonRow.style.opacity = '0';
         balloonRow.style.transform = 'translateY(20px)';
         balloonRow.style.pointerEvents = 'none';
-        balloonRow.style.visibility = 'hidden';
       } else {
-        balloonRow.style.visibility = 'visible';
         balloonRow.style.opacity = '1';
         balloonRow.style.transform = 'translateY(0)';
-        balloonRow.style.pointerEvents = 'none'; /* row stays non-interactive; .balloon children handle clicks */
       }
     });
   }, { threshold: 0.1 });
@@ -120,8 +117,9 @@ function selectRsvp(btn) {
 
 // RSVP submit — connects to Airtable
 async function submitRsvp() {
-  const name = document.getElementById('rsvpName').value.trim();
-  const guests = document.getElementById('rsvpGuests').value;
+  const name    = document.getElementById('rsvpName').value.trim();
+  const phone   = document.getElementById('rsvpPhone') ? document.getElementById('rsvpPhone').value.trim() : '';
+  const guests  = document.getElementById('rsvpGuests').value;
   const dietary = document.getElementById('rsvpDietary').value.trim();
 
   if (!name) {
@@ -134,37 +132,46 @@ async function submitRsvp() {
   btn.disabled = true;
 
   // ── AIRTABLE CONFIG ──
-  // Replace these with your actual values before deploying
-  const AIRTABLE_BASE_ID = 'YOUR_BASE_ID';
-  const AIRTABLE_TOKEN   = 'YOUR_ACCESS_TOKEN';
+  const AIRTABLE_BASE_ID = 'appUT8qGxJExCheH8';
+  const AIRTABLE_TOKEN   = 'patRKUzMDnmpmDWQP.3d4b216fc0f2164570d7c82ff17bed5158b60878068ffbba9b1471c3f9db3c57';
   const TABLE_NAME       = 'RSVPs';
 
   try {
-    const res = await fetch(`https://api.airtable.com/v0/${AIRTABLE_BASE_ID}/${TABLE_NAME}`, {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${AIRTABLE_TOKEN}`,
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        fields: {
-          'Name': name,
-          'Attending': selectedRsvp === 'going' ? 'Yes' : selectedRsvp === 'maybe' ? 'Maybe' : 'No',
-          'Number of Guests': guests || '0',
-          'Dietary Restrictions': dietary
-        }
-      })
-    });
+    const res = await fetch(
+      `https://api.airtable.com/v0/${AIRTABLE_BASE_ID}/${encodeURIComponent(TABLE_NAME)}`,
+      {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${AIRTABLE_TOKEN}`,
+          'Content-Type':  'application/json'
+        },
+        body: JSON.stringify({
+          fields: {
+            'Name':                 name,
+            'Phone Number':         phone,
+            'Attending':            selectedRsvp === 'going' ? 'Yes' : selectedRsvp === 'maybe' ? 'Maybe' : 'No',
+            'Number of Guests':     guests || '0',
+            'Dietary Restrictions': dietary
+          }
+        })
+      }
+    );
 
     if (res.ok) {
       document.getElementById('rsvpForm').style.display = 'none';
       document.getElementById('rsvpSuccess').classList.add('show');
     } else {
-      throw new Error('Airtable error');
+      const errBody = await res.json().catch(() => ({}));
+      const msg = errBody?.error?.message || errBody?.error?.type || `HTTP ${res.status}`;
+      console.error('Airtable error:', errBody);
+      alert(`Error: ${msg}`);
+      btn.textContent = 'RSVP';
+      btn.disabled = false;
     }
-  } catch(e) {
-    // In dev mode without Airtable configured, show success anyway
-    document.getElementById('rsvpForm').style.display = 'none';
-    document.getElementById('rsvpSuccess').classList.add('show');
+  } catch (e) {
+    console.error('Network error:', e);
+    alert(`Network error: ${e.message}`);
+    btn.textContent = 'RSVP';
+    btn.disabled = false;
   }
 }
