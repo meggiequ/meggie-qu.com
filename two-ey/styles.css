@@ -493,7 +493,7 @@
       padding: 60px 48px 80px 32px;
       max-width: none;
     }
-    .balloon-row { display: none; }
+    .balloon-row { display: none !important; }
   }
 
   /* ── TABLET ── */
