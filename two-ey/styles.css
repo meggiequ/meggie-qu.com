@@ -493,8 +493,11 @@
       align-items: flex-end;
     }
     .content-section {
-      padding: 60px 48px 80px 32px;
+      padding: 60px 48px 20vh 32px;
       max-width: none;
+    }
+    .details {
+      padding: 16vh 0 0 0;
     }
     .balloon-row { display: none !important; }
   }
