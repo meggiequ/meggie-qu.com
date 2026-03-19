@@ -146,7 +146,7 @@ async function submitRsvp() {
       body: JSON.stringify({
         fields: {
           'Name':                 name,
-          'Phone':                phone,
+          'Phone number':                phone,
           'Attending':            selectedRsvp === 'going' ? 'Yes' : selectedRsvp === 'maybe' ? 'Maybe' : 'No',
           'Number of Guests':     guests || '0',
           'Dietary Restrictions': dietary
