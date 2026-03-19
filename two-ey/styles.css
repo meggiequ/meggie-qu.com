@@ -149,7 +149,7 @@
   /* ── EVENT TITLE ── */
   .event-date {
     font-family: 'BlueCustard', 'Fredoka One', cursive;
-    font-size: clamp(22px, 5vw, 30px);
+    font-size: clamp(22px, 5vw, 32px);
     color: #35709D;
     text-align: center;
     margin-bottom: 20px;
@@ -260,7 +260,7 @@
   /* ── SECTION HEADINGS ── */
   .section-heading {
     font-family: 'BlueCustard', 'Fredoka One', cursive;
-    font-size: clamp(20px, 4vw, 26px);
+    font-size: clamp(20px, 4vw, 32px);
     color: #35709D;
     text-align: center;
     margin: 40px 0 20px;
@@ -453,11 +453,11 @@
   .success-emoji { font-size: 48px; margin-bottom: 12px; }
   .success-title {
     font-family: 'BlueCustard', 'Fredoka One', cursive;
-    font-size: 24px;
-    color: var(--teal);
+    font-size: 20px;
+    color: #35709D;
     margin-bottom: 8px;
   }
-  .success-text { font-size: 15px; color: var(--muted); }
+  .success-text { font-size: 15px; color: #35709D; }
 
     /* Hero balloons hidden on mobile/tablet – shown only on desktop */
   .hero-balloons { display: none; }
