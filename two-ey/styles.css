@@ -380,6 +380,13 @@
     border-color: #B45183;
     transform: scale(1.03);
   }
+  /* Disable scale on touch so taps don't misfire onto adjacent buttons */
+  @media (hover: none) {
+    .rsvp-toggle-btn:not(.active):hover { transform: none; }
+    .rsvp-toggle-btn.active:hover       { transform: none; }
+    .rsvp-submit:hover                  { transform: none; }
+    .rsvp-submit:active                 { transform: scale(0.97); }
+  }
   .form-label {
     font-size: 12px;
     font-weight: 700;
