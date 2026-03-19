@@ -118,7 +118,7 @@ function selectRsvp(btn) {
 // RSVP submit — connects to Airtable
 async function submitRsvp() {
   const name = document.getElementById('rsvpName').value.trim();
-  const phone = document.getElementById('rsvpPhone').value.trim();
+  const phone = document.getElementById('rsvpPhone') ? document.getElementById('rsvpPhone').value.trim() : '';
   const guests = document.getElementById('rsvpGuests').value;
   const dietary = document.getElementById('rsvpDietary').value.trim();
 
