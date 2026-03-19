@@ -77,14 +77,12 @@ function overlaps(ax, ay, ar, bx, by, br, pad) {
 
   const observer = new IntersectionObserver(entries => {
     entries.forEach(e => {
-      balloonRow.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
       if (e.isIntersecting) {
-        balloonRow.style.opacity = '0';
-        balloonRow.style.transform = 'translateY(20px)';
-        balloonRow.style.pointerEvents = 'none';
+        // RSVP is visible — completely remove balloon row from layout so it can't intercept taps
+        balloonRow.style.display = 'none';
       } else {
-        balloonRow.style.opacity = '1';
-        balloonRow.style.transform = 'translateY(0)';
+        // RSVP is off screen — show balloons again
+        balloonRow.style.display = 'flex';
       }
     });
   }, { threshold: 0.1 });
