@@ -61,7 +61,7 @@
   .menu-btn {
     width: 40px;
     height: 40px;
-    background: var(--teal);
+    background: #35709D;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -71,6 +71,9 @@
     justify-content: center;
     gap: 5px;
     padding: 0;
+  }
+  .menu-btn:hover {
+    background: #104F7E;
   }
   .menu-btn span {
     display: block;
@@ -102,12 +105,12 @@
   .nav-panel a {
     font-family: 'BlueCustard', 'Fredoka One', cursive;
     font-size: 20px;
-    color: var(--teal);
+    color: #35709D;
     text-decoration: none;
     padding: 10px 0;
     border-bottom: 1px solid #f0e0ea;
   }
-  .nav-panel a:hover { color: var(--teal-dark); }
+  .nav-panel a:hover { color: #104F7E; }
   .nav-close {
     position: absolute;
     top: 16px;
@@ -116,7 +119,7 @@
     border: none;
     font-size: 24px;
     cursor: pointer;
-    color: var(--muted);
+    color: #104F7E;
   }
 
   /* ── PAGE WRAPPER ── */
@@ -424,7 +427,7 @@
     width: 160px;
     margin: 20px auto 0;
     padding: 14px;
-    background: var(--teal-dark);
+    background: #35709D;
     color: white;
     font-family: 'BlueCustard', 'Fredoka One', cursive;
     font-size: 18px;
@@ -435,7 +438,7 @@
     transition: transform 0.15s ease, background 0.15s;
   }
   .rsvp-submit:hover {
-    background: var(--teal);
+    background: #104F7E;
     transform: scale(1.04);
   }
   .rsvp-submit:active { transform: scale(0.97); }
@@ -484,8 +487,8 @@
     }
     .hero-balloons {
       display: flex !important;
-      gap: 20px;
-      margin-top: 16px;
+      gap: 36px;
+      margin-top: 60px;
       justify-content: center;
       align-items: flex-end;
     }
