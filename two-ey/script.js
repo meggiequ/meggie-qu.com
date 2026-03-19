@@ -133,31 +133,26 @@ async function submitRsvp() {
 
   // ── AIRTABLE CONFIG ──
   const AIRTABLE_BASE_ID = 'appUT8qGxJExCheH8';
-  const AIRTABLE_TOKEN   = 'patRKUzMDnmpmDWQP';
+  const AIRTABLE_TOKEN   = 'patRKUzMDnmpmDWQP.3d4b216fc0f2164570d7c82ff17bed5158b60878068ffbba9b1471c3f9db3c57';
   const TABLE_NAME       = 'RSVPs';
 
-  const payload = {
-    fields: {
-      'Name':                 name,
-      'Phone':                phone,
-      'Attending':            selectedRsvp === 'going' ? 'Yes' : selectedRsvp === 'maybe' ? 'Maybe' : 'No',
-      'Number of Guests':     guests || '0',
-      'Dietary Restrictions': dietary
-    }
-  };
-
   try {
-    const res = await fetch(
-      `https://api.airtable.com/v0/${AIRTABLE_BASE_ID}/${encodeURIComponent(TABLE_NAME)}`,
-      {
-        method: 'POST',
-        headers: {
-          'Authorization': `Bearer ${AIRTABLE_TOKEN}`,
-          'Content-Type':  'application/json'
-        },
-        body: JSON.stringify(payload)
-      }
-    );
+    const res = await fetch(`https://api.airtable.com/v0/${AIRTABLE_BASE_ID}/${encodeURIComponent(TABLE_NAME)}`, {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${AIRTABLE_TOKEN}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        fields: {
+          'Name':                 name,
+          'Phone':                phone,
+          'Attending':            selectedRsvp === 'going' ? 'Yes' : selectedRsvp === 'maybe' ? 'Maybe' : 'No',
+          'Number of Guests':     guests || '0',
+          'Dietary Restrictions': dietary
+        }
+      })
+    });
 
     if (res.ok) {
       document.getElementById('rsvpForm').style.display = 'none';
