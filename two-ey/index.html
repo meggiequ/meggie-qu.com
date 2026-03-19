@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Annabeth Turns Two-ey!</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700<link href=" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Flower background -->
+<div class="flower-bg" id="flowerBg"></div>
+
+<!-- Nav -->
+<nav>
+  <button class="menu-btn" onclick="document.getElementById('navDrawer').classList.add('open')" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="nav-drawer" id="navDrawer" onclick="this.classList.remove('open')">
+  <div class="nav-panel" onclick="event.stopPropagation()">
+    <button class="nav-close" onclick="document.getElementById('navDrawer').classList.remove('open')">✕</button>
+    <a href="#details" onclick="document.getElementById('navDrawer').classList.remove('open')">Details</a>
+    <a href="#directions" onclick="document.getElementById('navDrawer').classList.remove('open')">Directions</a>
+    <a href="#gifting" onclick="document.getElementById('navDrawer').classList.remove('open')">Props</a>
+    <a href="#rsvp" onclick="document.getElementById('navDrawer').classList.remove('open')">RSVP</a>
+  </div>
+</div>
+
+<div class="page">
+
+  <!-- LEFT: Hero -->
+  <section class="hero-section">
+    <img class="hero-img" src="illustration-twoey.png" alt="Annabeth Turns Two-ey">
+
+    <!-- Balloons shown only on desktop, directly under the illustration -->
+    <div class="hero-balloons">
+      <div class="balloon balloon-going" onclick="selectBalloon('going')" role="button" aria-label="RSVP Going">
+        <div class="balloon-body">GO-<br>ING</div>
+        <div class="balloon-string"></div>
+      </div>
+      <div class="balloon balloon-maybe" onclick="selectBalloon('maybe')" role="button" aria-label="RSVP Maybe">
+        <div class="balloon-body">MAY-<br>BE</div>
+        <div class="balloon-string"></div>
+      </div>
+      <div class="balloon balloon-cantgo" onclick="selectBalloon('cantgo')" role="button" aria-label="RSVP Can't go">
+        <div class="balloon-body">CAN'T<br>GO</div>
+        <div class="balloon-string"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RIGHT: Content -->
+  <section class="content-section" id="details">
+
+    <!-- Date & Location -->
+    <div style="padding-top: 48px;">
+      <div class="event-date">Saturday, Apr 11, 3pm</div>
+      <a class="event-location" href="https://maps.app.goo.gl/rxbo7vGx9V2ceC966" target="_blank">
+        <svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M7 0C4.24 0 2 2.24 2 5c0 3.75 5 11 5 11s5-7.25 5-11c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 7 3.5a1.5 1.5 0 0 1 0 3z" fill="#3D6B84"/></svg>
+        Tree House Picnic Area, Fremont
+      </a>
+
+      <!-- Description -->
+      <p class="description">
+        You've been cast in the very special episode, "ANNABETH TURNS TWO-EY!" Join us for a picnic filled with tail-wagging fun!
+      </p>
+      <p class="description">
+        In this extra-special episode, having you join the cast is the best gift we could ever ask for. But if you'd like to contribute to Annabeth's collection of playtime treasures, we've put together a "<a href="#gifting">prop list</a>" to help avoid duplicate surprises on set. Thanks for being part of her story—we can't wait to celebrate with you! 🐾✨
+      </p>
+
+      <!-- Balloons — mobile/tablet only -->
+      <div class="balloon-row">
+        <div class="balloon balloon-going" onclick="selectBalloon('going')" role="button" aria-label="RSVP Going">
+          <div class="balloon-body">GO-<br>ING</div>
+          <div class="balloon-string"></div>
+        </div>
+        <div class="balloon balloon-maybe" onclick="selectBalloon('maybe')" role="button" aria-label="RSVP Maybe">
+          <div class="balloon-body">MAY-<br>BE</div>
+          <div class="balloon-string"></div>
+        </div>
+        <div class="balloon balloon-cantgo" onclick="selectBalloon('cantgo')" role="button" aria-label="RSVP Can't go">
+          <div class="balloon-body">CAN'T<br>GO</div>
+          <div class="balloon-string"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Directions -->
+    <div id="directions">
+      <h2 class="section-heading">Directions</h2>
+      <p class="description">Tree House Picnic Area is located south to Lake Elizabeth, left to Sabercat Play Area inside Central Park, Fremont.</p>
+
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7463.486237705446!2d-121.9629024!3d37.5472431!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fc0c254a132dd%3A0x74604770e1f5bda3!2sTree%20House%20Picnic%20Area!5e1!3m2!1sen!2sus!4v1773896674479!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="map-links">
+        <a class="map-link" href="https://maps.app.goo.gl/rxbo7vGx9V2ceC966" target="_blank">
+          <span class="map-link-icon" style="background:none; border-radius:50%;">📍</span>
+          Tree House Picnic Area, 40000 Paseo Padre Pkwy, Fremont, CA
+        </a>
+        <a class="map-link" href="https://maps.app.goo.gl/j9gZMmi1q5u2i6MC7" target="_blank">
+          <span class="map-link-icon" style="background:#4285F4; border-radius:4px; color:white; font-weight:700; font-family:sans-serif; font-size:11px;">P</span>
+          Stivers Lagoon gazebo parking lot
+        </a>
+      </div>
+    </div>
+
+    <!-- Gifting -->
+    <div id="gifting">
+      <h2 class="section-heading">PROPS</h2>
+      <p class="description">In this extra-special episode, having you join the cast is the best gift we could ever ask for. But if you'd like to contribute to Annabeth's collection of playtime treasures, we've put together a "prop list" to help avoid duplicate surprises on set. You can choose your preferred store to purchase props or donate to her play fund.</p>
+
+      <div class="registry-links">
+        <a class="registry-link amazon" href="#" target="_blank">
+          <img src="amazon.png" width="24" height="24" alt="Amazon">
+          Amazon Registry
+        </a>
+        <a class="registry-link target" href="#" target="_blank">
+          <img src="target.png" width="24" height="24" alt="Target">
+          Target Registry
+        </a>
+        <a class="registry-link venmo" href="#" target="_blank">
+          <img src="venmo.png" width="24" height="24" alt="Venmo">
+          Venmo Fund
+        </a>
+      </div>
+    </div>
+
+    <!-- RSVP -->
+    <div id="rsvp">
+      <h2 class="section-heading">RSVP</h2>
+
+      <div class="rsvp-section">
+        <div id="rsvpForm">
+          <!-- Toggle -->
+          <div class="rsvp-toggle">
+            <button class="rsvp-toggle-btn active" data-val="going" onclick="selectRsvp(this)">Going</button>
+            <button class="rsvp-toggle-btn" data-val="maybe" onclick="selectRsvp(this)">Maybe</button>
+            <button class="rsvp-toggle-btn" data-val="cantgo" onclick="selectRsvp(this)">Can't go</button>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">RSVPING AS</label>
+            <input class="form-input" type="text" placeholder="Name" id="rsvpName">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Phone Number</label>
+            <input class="form-input" type="tel" placeholder="(888) 888-8888" id="rsvpPhone">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">How many plus ones</label>
+            <select class="form-select" id="rsvpGuests">
+              <option value="">Select</option>
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+              <option>13</option>
+              <option>14</option>
+              <option>15</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Dietary restrictions</label>
+            <textarea class="form-textarea" placeholder="E.g. gluten-free, specific allergies, etc." id="rsvpDietary"></textarea>
+          </div>
+
+          <button class="rsvp-submit" onclick="submitRsvp()">RSVP</button>
+        </div>
+
+        <div class="rsvp-success" id="rsvpSuccess">
+          <div class="success-emoji">🎉</div>
+          <div class="success-title">See you there!</div>
+          <p class="success-text">Thanks for RSVPing! We can't wait to celebrate with you. 🐾✨</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
